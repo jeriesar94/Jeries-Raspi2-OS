@@ -1,6 +1,7 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <kernel/uart.h>
+//#include <common/stdlib.h>
 
 static inline void mmio_write(uint32_t reg, uint32_t data){
     *(volatile uint32_t*)reg = data;

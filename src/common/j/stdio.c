@@ -1,4 +1,6 @@
+#include <kernel/uart.h>
 #include <common/stdio.h>
+#include <common/stdlib.h>
 
 char getc(void* src){
 	
