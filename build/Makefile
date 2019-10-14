@@ -1,5 +1,5 @@
 # Don't use normal gcc, use the arm cross compiler
-CC = arm-none-eabi-gcc
+CC = arm-none-eabi-gcc.exe
 
 # Set any constants based on the raspberry pi model.  Version 1 has some differences to 2 and 3
 ifeq ($(RASPI_MODEL),1)
@@ -50,4 +50,4 @@ clean:
 	rm $(IMG_NAME)
 
 run: build
-	qemu-system-arm -m 256 -M raspi2 -serial stdio -kernel kernel.img -nographic
+	qemu-system-arm.exe -m 256 -M raspi2 -serial stdio -kernel kernel_jeries.img
